@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Document</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-firestore.js"></script>
+ <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+ <div class="container mt-5">
+  <div class="row">
+   <div class="col-sm-4">
+    <div class="card shadow-lg">
+     <div class="card-header">
+      Add New
+      <div class="card-body">
+       <form action="#">
+        <div class="form-group">
+         <label>UserName</label>
+         <input type="text" class="form-control" id="name" placeholder="Username...">
+        </div>
+        <div class="form-group">
+         <label>Profile_Image</label>
+         <input type="text" class="form-control" id="pro" placeholder="Profilte...">
+        </div>
+        <div class="form-group">
+         <label>Post_Image</label>
+         <input type="text" class="form-control" id="post" placeholder="Post...">
+        </div>
+       </form>
+       <button type="button" class="btn btn-info btn-block">Add New</button>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="col-sm-8" id="result">
+
+   </div>
+  </div>
+ </div>
+ <script src="jquery-3.4.1.min.js"></script>
+ <script src="js/data.js"></script>
+
+ <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-analytics.js"></script>
+
+ <script>
+  var firebaseConfig = {
+   apiKey: "AIzaSyCPENgd_vyBNv2MVsZoGXkUKjlLXkvrSiU",
+   authDomain: "student-dcdf9.firebaseapp.com",
+   databaseURL: "https://student-dcdf9.firebaseio.com",
+   projectId: "student-dcdf9",
+   storageBucket: "student-dcdf9.appspot.com",
+   messagingSenderId: "764067277904",
+   appId: "1:764067277904:web:3a4f490c841a66a16df555",
+   measurementId: "G-92JXZMQKMD"
+  };
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  var db = firebase.firestore();
+ </script>
+</body>
+
+</html>
